@@ -2,6 +2,8 @@
 
 [Demo](https://spideyfolio.web.app/)
 
+Note: Kindly [visit this repo](https://github.com/spidey1405/spidey-folio) for the template files.
+
 Customize and create your Portfolio website and deploy it with the domain name of your choice without any hastles.
 
 ## Table of Contents
