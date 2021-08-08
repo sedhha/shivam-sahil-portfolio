@@ -12,7 +12,6 @@ function App() {
 			//const res = await fetch("https://geolocation-db.com/json/");
 
 			axios.get("https://geolocation-db.com/json/").then(response => {
-				console.log("Response = ", response);
 				axios({
 					method: "post",
 					url: process.env.REACT_APP_SHEETS_URI,
@@ -25,11 +24,9 @@ function App() {
 						"Content-Type": "text/plain;charset=utf-8",
 					},
 				})
-					.then(function (response) {
-						console.log(response);
-					})
+					.then(function () {})
 					.catch(function (error) {
-						console.log(error);
+						console.log("Error Occured = ", error);
 					});
 			});
 		};
