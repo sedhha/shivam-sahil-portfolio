@@ -11,17 +11,20 @@ const mapParagraphContent = (mainIntroContents, classes) => {
 				>
 					{element.heading}
 				</h3>
-				<p
-					style={element.descriptionStyle || {}}
-					className={classes["paragraph"]}
-				>
-					{element.description}
-				</p>
+				{element.description.split("\n").map((ee, index) => (
+					<p
+						key={element.id + "_p_" + index}
+						style={element.descriptionStyle || {}}
+						className={classes["paragraph"]}
+					>
+						{ee}
+					</p>
+				))}
 			</div>
 		);
 	});
 };
-export const mappingAbout = (mainContent, classes) => {
+export const MappingAbout = ({ mainContent, classes }) => {
 	if (!mainContent.showSection) return null;
 	const paragraphContent = mapParagraphContent(
 		mainContent.mainIntroContents,
@@ -42,7 +45,7 @@ export const mappingAbout = (mainContent, classes) => {
 			</div>
 
 			<div className={classes.row_section}>
-				<div className={classes["col-1-of-2"]}>
+				<div>
 					{paragraphContent}
 					<a
 						href={mainContent.aboutConnectButtonRedirectLink || "#"}
@@ -51,45 +54,44 @@ export const mappingAbout = (mainContent, classes) => {
 						{mainContent.aboutConnectButtonText || "Learn More "} &#8594;
 					</a>
 				</div>
-				<div className={classes["col-1-of-2"]}>
-					<div className={classes["composition"]}>
-						<img
-							src={
-								process.env.PUBLIC_URL +
-								(mainContent.composition.img1 ||
-									"web/images/composition/nat-1.jpg")
-							}
-							alt={"composiiton images"}
-							className={[
-								classes["composition__photo"],
-								classes["composition__photo--p1"],
-							].join(" ")}
-						/>
-						<img
-							src={
-								process.env.PUBLIC_URL +
-								(mainContent.composition.img2 ||
-									"web/images/composition/nat-1.jpg")
-							}
-							alt={"composiiton images"}
-							className={[
-								classes["composition__photo"],
-								classes["composition__photo--p2"],
-							].join(" ")}
-						/>
-						<img
-							src={
-								process.env.PUBLIC_URL +
-								(mainContent.composition.img3 ||
-									"web/images/composition/nat-1.jpg")
-							}
-							alt={"composiiton images"}
-							className={[
-								classes["composition__photo"],
-								classes["composition__photo--p3"],
-							].join(" ")}
-						/>
-					</div>
+
+				<div className={classes["composition"]}>
+					<img
+						src={
+							process.env.PUBLIC_URL +
+							(mainContent.composition.img1 ||
+								"web/images/composition/nat-1.jpg")
+						}
+						alt={"composiiton images"}
+						className={[
+							classes["composition__photo"],
+							classes["composition__photo--p1"],
+						].join(" ")}
+					/>
+					<img
+						src={
+							process.env.PUBLIC_URL +
+							(mainContent.composition.img2 ||
+								"web/images/composition/nat-1.jpg")
+						}
+						alt={"composiiton images"}
+						className={[
+							classes["composition__photo"],
+							classes["composition__photo--p2"],
+						].join(" ")}
+					/>
+					<img
+						src={
+							process.env.PUBLIC_URL +
+							(mainContent.composition.img3 ||
+								"web/images/composition/nat-1.jpg")
+						}
+						alt={"composiiton images"}
+						className={[
+							classes["composition__photo"],
+							classes["composition__photo--p3"],
+						].join(" ")}
+					/>
 				</div>
 			</div>
 		</section>

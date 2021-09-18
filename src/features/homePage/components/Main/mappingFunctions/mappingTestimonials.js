@@ -48,7 +48,7 @@ const getSocialHandles = (socialDetails, classes) => {
 	return <div className={classes["rowElement"]}>{socials}</div>;
 };
 
-export const mapTestimonials = (testimonialComponent, classes) => {
+export const MapTestimonials = ({ testimonialComponent, classes }) => {
 	if (!testimonialComponent.showSection) return null;
 	else {
 		const sectionHeading = getMainHeading(

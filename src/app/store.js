@@ -5,4 +5,5 @@ export const store = configureStore({
 	reducer: {
 		assetsReducer: assetsReducer,
 	},
+	devTools: process.env.NODE_ENV !== "production",
 });

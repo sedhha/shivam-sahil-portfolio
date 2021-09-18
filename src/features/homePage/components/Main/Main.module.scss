@@ -43,6 +43,7 @@
 }
 
 .composition {
+	margin-top: 6rem;
 	position: relative;
 	@include respond(tab-port) {
 		margin-top: 5rem;
@@ -147,11 +148,31 @@
 
 .row_projects {
 	max-width: $grid-width;
+	max-height: $grid-projects-height;
 	margin: 0 auto;
 	padding: 0 2rem;
+	margin-top: -2rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
+	grid-row: 1rem;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 1rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px $scrollbar-theme-color-track;
+		-webkit-box-shadow: inset 0 0 6px $scrollbar-theme-color-track;
+		border-radius: 1rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 1rem;
+		box-shadow: inset 0 0 6px $scrollbar-theme-color-thumb;
+		-webkit-box-shadow: inset 0 0 6px $scrollbar-theme-color-thumb;
+	}
 
 	@include respond(tab-port) {
 		grid-template-columns: 1fr 1fr;
@@ -178,7 +199,7 @@
 
 .heading-para {
 	&:not(:last-child) {
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -291,11 +312,10 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 50rem;
-
+	height: $grid-projects-card-height;
 	&__side {
 		font-size: 2rem;
-		height: 50rem;
+		height: $grid-projects-card-height;
 		transition: all 0.8s ease;
 		position: absolute;
 		top: 0;
