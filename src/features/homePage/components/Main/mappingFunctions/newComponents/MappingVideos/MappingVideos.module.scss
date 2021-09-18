@@ -12,8 +12,8 @@
 	grid-template-columns: repeat(3, 1fr);
 
 	width: 100%;
-	grid-column-gap: 0.5rem;
-	grid-row-gap: 0.8rem;
+	grid-column-gap: 2rem;
+	grid-row-gap: 3rem;
 	max-height: 45rem;
 	overflow-y: scroll;
 	@include respond(tab-port) {

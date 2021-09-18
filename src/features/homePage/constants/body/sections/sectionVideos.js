@@ -42,6 +42,12 @@ export const sectionVideos = {
 				video_id: "DDPfM5DF368",
 				heading: "SpideyFolio: Open Source React Portfolio",
 			},
+			{
+				id: nanoid(),
+				customThumbnail: false,
+				video_id: "Ez6Kvxko72w",
+				heading: "Automating UIPath Startup",
+			},
 		],
 	},
 };

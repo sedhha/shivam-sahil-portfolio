@@ -30,10 +30,3 @@ export function MappingVideos(props) {
 		</section>
 	) : null;
 }
-
-/*
-style={{
-					backgroundImage:
-						"linear-gradient(to right bottom, rgba(130, 231, 242, 0.8), rgba(100, 166, 255, 0.8)), url(/web/images/composition/cover-1.jpg)",
-				}}
-*/

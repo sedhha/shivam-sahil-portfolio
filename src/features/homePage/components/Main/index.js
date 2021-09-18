@@ -41,7 +41,9 @@ export default function Main() {
 				exprerienceContent={sectionExperiences}
 				classes={classes}
 			/>
+
 			<MappingParticipants sectionsParticipations={sectionParticipations} />
+
 			<MappingVideos sectionVideos={sectionVideos} />
 		</main>
 	);

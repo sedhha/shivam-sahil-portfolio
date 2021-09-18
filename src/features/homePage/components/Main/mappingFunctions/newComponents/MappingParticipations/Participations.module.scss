@@ -9,6 +9,13 @@
 	overflow: hidden;
 	overflow-y: auto;
 	padding: 1rem;
+	@include respond(tab-port) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include respond(phone) {
+		grid-template-columns: repeat(1, 1fr);
+		max-height: 40rem;
+	}
 	&_item {
 		border: 1px solid #fff;
 		display: flex;
@@ -56,4 +63,18 @@
 	/* clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%); */
 	left: -29%;
 	top: -6%;
+	@include respond(tab-port) {
+		transform: rotateZ(0) !important;
+		font-size: 1.2rem !important;
+		padding: 0.25rem;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	@include respond(phone) {
+		transform: rotateZ(0) !important;
+		font-size: 1.2rem !important;
+		padding: 0.25rem;
+		top: 0 !important;
+		left: 0 !important;
+	}
 }
