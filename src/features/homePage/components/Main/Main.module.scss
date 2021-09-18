@@ -723,4 +723,10 @@
 	background-color: $section-background-color;
 	padding: 2rem 0;
 	width: 100%;
+
+	&_withBg {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }

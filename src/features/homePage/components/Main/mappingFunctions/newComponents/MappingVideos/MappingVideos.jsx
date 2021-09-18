@@ -32,34 +32,8 @@ export function MappingVideos(props) {
 }
 
 /*
-<div className={classes.VideoGridCard_Img__Container}>
-					<div className={classes.VideoGridCard_PlayIconContainer}>
-						{!showVideo && (
-							<YT
-								className={classes.VideoGridCard_PlayIcon}
-								onClick={() => {
-									setShowVideo(true);
-								}}
-							/>
-						)}
-					</div>
-					{showVideo ? (
-						<div className={classes.VideoGridCard_Img__Img}>
-							<iframe
-								title="yt video"
-								id="player"
-								type="text/html"
-								style={{ width: "100%", height: "stretch" }}
-								src={`https://www.youtube.com/embed/vRO0CXJC4Xw`}
-								frameborder="0"
-							></iframe>
-						</div>
-					) : (
-						<img
-							className={classes.VideoGridCard_Img__Img}
-							src="https://i.ytimg.com/vi_webp/vRO0CXJC4Xw/mqdefault.webp"
-							alt="video"
-						/>
-					)}
-				</div>
+style={{
+					backgroundImage:
+						"linear-gradient(to right bottom, rgba(130, 231, 242, 0.8), rgba(100, 166, 255, 0.8)), url(/web/images/composition/cover-1.jpg)",
+				}}
 */
