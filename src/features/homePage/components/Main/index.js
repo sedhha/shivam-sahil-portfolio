@@ -6,6 +6,8 @@ import {
 	MapProjects,
 	MapTestimonials,
 	MapExperienceandCocurricular,
+	MappingVideos,
+	MappingParticipants,
 } from "./mappingFunctions/mapping";
 
 import {
@@ -22,6 +24,8 @@ export default function Main() {
 		sectionFeatures,
 		sectionProjects,
 		sectionReferences,
+		sectionVideos,
+		sectionParticipations,
 	} = useSelector(getMainContent);
 
 	return (
@@ -37,6 +41,8 @@ export default function Main() {
 				exprerienceContent={sectionExperiences}
 				classes={classes}
 			/>
+			<MappingVideos sectionVideos={sectionVideos} />
+			<MappingParticipants sectionsParticipations={sectionParticipations} />
 		</main>
 	);
 }

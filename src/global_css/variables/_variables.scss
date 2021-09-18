@@ -19,6 +19,28 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+$section-background-color: #eeeeee;
+
+//Linear Gradients
+
+$green-linear-gradient: linear-gradient(
+	to right,
+	$color-primary-light,
+	$color-primary-dark
+);
+
+$orange-linear-gradient: linear-gradient(
+	to right,
+	$color-secondary-light,
+	$color-secondary-dark
+);
+
+$blue-linear-gradient: linear-gradient(
+	to right,
+	$color-tertiary-light,
+	$color-tertiary-dark
+);
+
 // FONT
 $default-font-size: 1.6rem;
 

@@ -26,11 +26,11 @@ export const sectionFeatures = {
 			//icon styling in stroke and fill. Make sure to keep it unique in case you're using id. Other wise this
 			// property isn't required
 			displayIcon: getIcon(iconsMap.reactjs, { ...iconStyling }),
-			heading: "React JS",
+			heading: "Mern Stack",
 			headingStyle: {
 				marginBottom: "1.5rem",
 			},
-			para: "Buidling this and many more analytics web applications and dashboards from last 18 months.",
+			para: "Analytics Applications, Configuration UI, Open Source Portfolios, etc.",
 		},
 
 		{

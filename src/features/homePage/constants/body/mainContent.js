@@ -4,22 +4,29 @@ import {
 	sectionProjects,
 	sectionReferences,
 	sectionExperiences,
+	sectionVideos,
+	sectionParticipations,
 } from "./sections";
 
 export const mainContent = {
 	//About
-	sectionAbout: sectionAbout,
+	sectionAbout,
 
 	//Section Features
-	sectionFeatures: sectionFeatures,
+	sectionFeatures,
 
 	//Projects
-	sectionProjects: sectionProjects,
+	sectionProjects,
 
 	//References
-	sectionReferences: sectionReferences,
+	sectionReferences,
 
 	//Experiences
+	sectionExperiences,
 
-	sectionExperiences: sectionExperiences,
+	//Videos
+	sectionVideos,
+
+	//Participations
+	sectionParticipations,
 };

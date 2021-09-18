@@ -9,6 +9,7 @@ import {
 	AiOutlineCodepen,
 	AiOutlineYoutube,
 } from "react-icons/ai";
+import { FiMinimize2 } from "react-icons/fi";
 import { FaReact, FaDatabase, FaEye, FaWordpressSimple } from "react-icons/fa";
 import { BsTriangle, BsPencilSquare } from "react-icons/bs";
 import { GiRobotHelmet } from "react-icons/gi";
@@ -22,6 +23,8 @@ export const sectionIds = {
 	sectionProjects_sectionId: uniquePortfolio + "projects-section",
 	sectionReferences_sectionId: uniquePortfolio + "references-section",
 	sectionExperiences: uniquePortfolio + "experiences-section",
+	sectionVideos: uniquePortfolio + "workshops-and-talks",
+	sectionParticipations: uniquePortfolio + "participations-section",
 };
 
 export const navItemsHeader = {
@@ -45,6 +48,18 @@ export const navItemsHeader = {
 		href: sectionIds.sectionReferences_sectionId,
 		display: "Reviews",
 	},
+	sectionExperiences: {
+		href: sectionIds.sectionExperiences,
+		display: "Experience",
+	},
+	sectionVideos: {
+		href: sectionIds.sectionVideos,
+		display: "Videos",
+	},
+	sectionParticipations: {
+		href: sectionIds.sectionParticipations,
+		display: "Events",
+	},
 };
 
 export const iconsMap = {
@@ -65,6 +80,7 @@ export const iconsMap = {
 	youtube: AiOutlineYoutube,
 	wrytin: BsPencilSquare,
 	wordpress: FaWordpressSimple,
+	minimize: FiMinimize2,
 };
 
 export const getIcon = (IconName, props) => <IconName {...props} />;
