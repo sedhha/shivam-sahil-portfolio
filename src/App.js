@@ -3,14 +3,40 @@ import 'react-slidedown/lib/slidedown.css';
 import HomePageSkeleton from './features/homePage/skeleton';
 import './app.scss';
 import ReactGa from 'react-ga';
+// import axios from 'axios';
+// import io from 'socket.io-client';
+// import { endpoint } from './endpoint';
+
+// const socket = io.connect(endpoint, {
+//   'sync disconnect on unload': true,
+//   'query': { token: process.env.REACT_APP_HEROKU_KEY },
+// });
+function App() {
+  React.useEffect(() => {
+    ReactGa.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    ReactGa.pageview('/');
+  }, []);
+  return (
+    <div>
+      <HomePageSkeleton />
+    </div>
+  );
+}
+
+export default App;
+
+/*import React from 'react';
+import 'react-slidedown/lib/slidedown.css';
+import HomePageSkeleton from './features/homePage/skeleton';
+import './app.scss';
+import ReactGa from 'react-ga';
 import axios from 'axios';
 import io from 'socket.io-client';
-const socket = io.connect(
-  'https://shivamsahil-backend-tracker.herokuapp.com/',
-  {
-    'sync disconnect on unload': true,
-  }
-);
+import { endpoint } from './endpoint';
+const socket = io.connect(endpoint, {
+  'sync disconnect on unload': true,
+  'token': process.env.REACT_APP_HEROKU_KEY,
+});
 socket.on('message-response', (msg) =>
   console.log('Response recieved = ', msg)
 );
@@ -53,4 +79,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
