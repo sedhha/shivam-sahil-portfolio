@@ -22,7 +22,7 @@ export function MappingVideos(props) {
               index={index}
               key={index}
               heading={element.heading}
-              video_id={'https://www.youtube.com/watch?v=' + element.video_id}
+              video_id={element.video_id}
               onVideoClickHandler={onVideoClickHandler}
             />
           </div>

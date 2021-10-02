@@ -34,9 +34,9 @@ export default function VideoContainer(props) {
           config={embedOptions}
           url={'https://www.youtube.com/watch?v=' + video_id}
           //   onVideoClickHandler={onVideoClickHandler}
-          onPlay={() => onVideoClickHandler('onPlayEvent__' + video_id)}
-          onPause={() => onVideoClickHandler('onPauseEvent__' + video_id)}
-          onEnded={() => onVideoClickHandler('onEndedEvent__' + video_id)}
+          onPlay={() => onVideoClickHandler('onPlayEvent__' + heading)}
+          onPause={() => onVideoClickHandler('onPauseEvent__' + heading)}
+          onEnded={() => onVideoClickHandler('onEndedEvent__' + heading)}
         />
       </div>
     </div>
