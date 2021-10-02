@@ -10,6 +10,7 @@ import { fetchGeoLocationData } from './slice/dataSlice';
 export default function Skeleton() {
   const dispatch = useDispatch();
   React.useEffect(() => {
+    // if (process.env.NODE_ENV !== 'production')
     dispatch(fetchGeoLocationData());
   }, [dispatch]);
   return (
