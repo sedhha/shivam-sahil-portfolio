@@ -9,16 +9,15 @@
 .VideoGrid {
   display: grid;
   padding: 0.5rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 1.5rem;
   max-height: 45rem;
   overflow-y: scroll;
-  @include respond(tab-port) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  // @include respond(tab-port) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
   @include respond(phone) {
     grid-template-columns: repeat(1, 1fr);
     max-height: 40rem;
@@ -100,3 +99,20 @@
 .YTTriggerPassive {
   z-index: -1;
 }
+
+.Videos {
+  display: flex;
+  height: 30rem;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    height: 28rem;
+  }
+}
+
+.VideoElements_RP {
+  width: 100%;
+}
+// .reactPlayer {
+//   min-height: 60rem;
+// }
