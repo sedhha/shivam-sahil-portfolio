@@ -13,7 +13,6 @@ const embedOptions = {
 };
 export default function VideoContainer(props) {
   const { index, heading, video_id, onVideoClickHandler } = props;
-
   return (
     <div className={classes.VideoElements_RP}>
       <label

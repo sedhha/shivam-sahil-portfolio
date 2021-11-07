@@ -7,51 +7,32 @@ export default class SlidingContainer extends Component {
     super(props);
     this.state = {
       currentPosition: 0,
+      previousPosition: 0,
       totalItems: this.props.renderArrayOfComponents.length || 0,
-      hideClass: 'SwipeEffectHideToRight',
       showClass: 'SwipeEffectShowToLeft',
-      showRight: true,
-      showLeft: false,
     };
   }
 
   onSwapClickHandler = (swapToLeft) => {
     let newPosition;
-    let showClass = 'SwipeEffectShowToLeft';
-    let hideClass = 'SwipeEffectHideToRight';
-    let showLeft = true;
-    let showRight = true;
+    let prevPosition = this.state.currentPosition;
+
     if (swapToLeft) {
       newPosition = this.state.currentPosition - 1;
-      showClass = 'SwipeEffectShowToLeft';
-      hideClass = 'SwipeEffectHideToRight';
     } else {
       newPosition = this.state.currentPosition + 1;
-      showClass = 'SwipeEffectShowToRight';
-      hideClass = 'SwipeEffectHideToLeft'; //TransfomUpcomingToLeftAndSwipeEffectToShowLeft
     }
     if (newPosition < 0) {
       newPosition = this.state.totalItems - 1;
-
-      showClass = 'SwipeEffectShowToLeft';
-      hideClass = 'SwipeEffectHideToRight';
     }
     if (newPosition >= this.state.totalItems) {
       newPosition = 0;
-      showClass = 'SwipeEffectShowToRight';
-      hideClass = 'SwipeEffectHideToLeft';
     }
-
-    if (newPosition === 0) showLeft = false;
-    else if (newPosition === this.state.totalItems - 1) showRight = false;
 
     this.setState({
       ...this.state,
       currentPosition: newPosition,
-      hideClass: hideClass,
-      showClass: showClass,
-      showLeft: showLeft,
-      showRight: showRight,
+      previousPosition: prevPosition,
     });
   };
   render() {
@@ -72,13 +53,29 @@ export default class SlidingContainer extends Component {
           </div>
         );
       } else {
+        const currPos = this.state.currentPosition;
+        const prevPos = this.state.previousPosition;
+        let hideClass;
+        if (currPos === 0 && prevPos === currPos) {
+          if (index === sections.length - 1) {
+            hideClass = 'SwipeEffectHideToLeft';
+          } else hideClass = 'SwipeEffectHideToRight';
+        } else {
+          const prevPointer = currPos <= 0 ? sections.length - 1 : currPos - 1;
+
+          if (index === prevPointer) {
+            hideClass = 'SwipeEffectHideToLeft';
+          } else {
+            hideClass = 'SwipeEffectHideToRight';
+          }
+        }
+
         renderer = (
           <div
             key={this.props.uniqueId + index}
-            className={[
-              classes.FlexBoxContainer,
-              classes[this.state.hideClass],
-            ].join(' ')}>
+            className={[classes.FlexBoxContainer, classes[hideClass]].join(
+              ' '
+            )}>
             {ele}
           </div>
         );
@@ -97,28 +94,23 @@ export default class SlidingContainer extends Component {
         }}
         className={classes.SlidingContainer}>
         {renderElement}
-        {this.state.showLeft ? (
-          <div
-            className={classes.LeftNavigate}
-            onClick={() => {
-              this.onSwapClickHandler(true);
-              this.props.onTestimonialActionHandler('goLeftButton_testimonial');
-            }}>
-            <AiOutlineLeft className={classes.NavigatorIconClass} />
-          </div>
-        ) : null}
-        {this.state.showRight ? (
-          <div
-            className={classes.RightNavigate}
-            onClick={() => {
-              this.onSwapClickHandler(false);
-              this.props.onTestimonialActionHandler(
-                'goRightButton_testimonial'
-              );
-            }}>
-            <AiOutlineRight className={classes.NavigatorIconClass} />
-          </div>
-        ) : null}
+        <div
+          className={classes.LeftNavigate}
+          onClick={() => {
+            this.onSwapClickHandler(true);
+            this.props.onTestimonialActionHandler('goLeftButton_testimonial');
+          }}>
+          <AiOutlineLeft className={classes.NavigatorIconClass} />
+        </div>
+
+        <div
+          className={classes.RightNavigate}
+          onClick={() => {
+            this.onSwapClickHandler(false);
+            this.props.onTestimonialActionHandler('goRightButton_testimonial');
+          }}>
+          <AiOutlineRight className={classes.NavigatorIconClass} />
+        </div>
       </div>
     );
   }
