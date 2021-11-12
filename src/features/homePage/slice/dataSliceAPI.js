@@ -1,7 +1,10 @@
 import axios from 'axios';
 export const getGeoData = async () => {
   const response = await fetch('https://geolocation-db.com/json/');
-  const data = response.json();
+  const data = await response.json();
+  const secondResponse = await fetch('https://ipapi.co/json/');
+  const secondData = await secondResponse.json();
+
   if (process.env.NODE_ENV === 'production')
     axios({
       method: 'post',
@@ -19,5 +22,5 @@ export const getGeoData = async () => {
       .catch(function (error) {
         console.log('Error Occured = ', error);
       });
-  return data;
+  return { data, secondData };
 };

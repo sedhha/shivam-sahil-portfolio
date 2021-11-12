@@ -47,7 +47,7 @@ export const assetSlice = createSlice({
         state.geoData = {
           error: false,
           msg: 'Geo Data Fetched',
-          ...action.payload,
+          ...action.payload.data,
         };
         state.geoDataLoaded = true;
         state.status = 'idle';
