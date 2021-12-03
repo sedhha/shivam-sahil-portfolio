@@ -105,6 +105,10 @@
   height: 30rem;
   margin-bottom: 2rem;
 
+  @include respond(big-desktop) {
+    height: 40rem;
+  }
+
   @include respond(tab-port) {
     height: 28rem;
   }

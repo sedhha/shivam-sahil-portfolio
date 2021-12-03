@@ -132,6 +132,13 @@
   grid-auto-rows: minmax(10rem, auto);
   margin-top: -6rem;
 
+  @include respond(big-desktop) {
+    max-width: 120rem;
+  }
+  @include respond(big-desktop-assoc) {
+    max-width: 120rem;
+  }
+
   @include respond(tab-port) {
     grid-template-columns: 1fr 1fr;
   }
@@ -173,6 +180,11 @@
     border-radius: 1rem;
     box-shadow: inset 0 0 6px $scrollbar-theme-color-thumb;
     -webkit-box-shadow: inset 0 0 6px $scrollbar-theme-color-thumb;
+  }
+
+  @include respond(big-desktop) {
+    width: 90%;
+    max-width: 150rem;
   }
 
   @include respond(tab-port) {
@@ -251,6 +263,10 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
   height: 100%;
+
+  @include respond(big-desktop-assoc) {
+    min-height: 30rem;
+  }
 
   @include respond(tab-port) {
     padding: 2rem;
@@ -469,6 +485,10 @@
   width: 100%;
   padding: 2rem;
 
+  @include respond(big-desktop) {
+    grid-gap: 4.5rem;
+  }
+
   @include respond(phone) {
     grid-gap: 0.25rem;
   }
@@ -497,6 +517,10 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.1);
     min-height: 22rem;
     -webkit-box-shadow: 0 2rem 4rem rgba($color-black, 0.1);
+
+    @include respond(big-desktop) {
+      min-height: 35rem;
+    }
 
     &:hover {
       transform: scale(0.9);

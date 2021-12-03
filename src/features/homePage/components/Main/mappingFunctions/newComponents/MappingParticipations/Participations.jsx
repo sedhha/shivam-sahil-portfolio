@@ -32,7 +32,7 @@ export function MappingParticipants(props) {
               onClick={() => onParticipationActionHandler(ele.eventName)}>
               {ele.labelTagNeeded && (
                 <div
-                  style={ele.style || {}}
+                  // style={ele.style || {}}
                   className={[
                     classes.HonorLabel,
                     ele.labelTagNeeded ? classes[ele.badgeClass] : null,
