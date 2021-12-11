@@ -64,9 +64,9 @@ export const MappingAbout = ({
         <div className={classes['composition']}>
           <img
             src={
-              process.env.PUBLIC_URL +
-              (mainContent.composition.img1 ||
-                'web/images/composition/nat-1.jpg')
+              mainContent.composition.img1.isWebImage
+                ? `${mainContent.composition.img1.uri}?raw=true`
+                : process.env.PUBLIC_URL + mainContent.composition.img1.uri
             }
             alt={'composiiton images'}
             className={[
@@ -76,9 +76,9 @@ export const MappingAbout = ({
           />
           <img
             src={
-              process.env.PUBLIC_URL +
-              (mainContent.composition.img2 ||
-                'web/images/composition/nat-1.jpg')
+              mainContent.composition.img2.isWebImage
+                ? `${mainContent.composition.img2.uri}?raw=true`
+                : process.env.PUBLIC_URL + mainContent.composition.img2.uri
             }
             alt={'composiiton images'}
             className={[
@@ -88,9 +88,9 @@ export const MappingAbout = ({
           />
           <img
             src={
-              process.env.PUBLIC_URL +
-              (mainContent.composition.img3 ||
-                'web/images/composition/nat-1.jpg')
+              mainContent.composition.img3.isWebImage
+                ? `${mainContent.composition.img3.uri}?raw=true`
+                : process.env.PUBLIC_URL + mainContent.composition.img3.uri
             }
             alt={'composiiton images'}
             className={[
