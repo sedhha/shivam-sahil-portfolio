@@ -13,7 +13,9 @@ export const sectionParticipations = {
       labelTag: '2 Time Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/uw_bc.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/uw_bc.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-35%', top: '2%' },
     },
@@ -23,7 +25,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/flutterthon.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/flutterthon.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -32,7 +36,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/fusion360.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/fusion360.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -41,7 +47,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/projects/thirdeye.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/projects/thirdeye.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -50,7 +58,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/projects/agrobuddy.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/projects/agrobuddy.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -59,7 +69,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/biofest.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/biofest.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -68,7 +80,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/r4h.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/r4h.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -78,7 +92,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelClassName: 'winner',
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/mech_conf.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/mech_conf.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Mechanical Conference',
     },
     {
@@ -87,7 +103,9 @@ export const sectionParticipations = {
       labelTag: 'Winner',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/reverse_engineering.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/reverse_engineering.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Reverse Engineering',
     },
     {
@@ -96,7 +114,9 @@ export const sectionParticipations = {
       labelTag: 'First Runner Up',
       badgeClass: 'HonorLabel_gold',
       labelTagNeeded: true,
-      imgSource: '/web/images/events/formula_balloon.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/formula_balloon.jpg',
+      isWebImage: true,
       imgAlt: 'Formula Balloon',
       style: { left: '-30%', top: '2%', fontSize: '1.3rem' },
     },
@@ -106,7 +126,9 @@ export const sectionParticipations = {
       labelTag: '28th All India Rank',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_gold',
-      imgSource: '/web/images/events/jmo.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/jmo.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-30%', top: '4%', fontSize: '1.2rem' },
     },
@@ -117,7 +139,9 @@ export const sectionParticipations = {
       labelTag: '4th Rank (Global)',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_silver',
-      imgSource: '/web/images/events/irc2019.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/irc2019.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Reverse Engineering',
       style: { left: '-34%', top: '-2%', fontSize: '1.2rem' },
     },
@@ -127,7 +151,9 @@ export const sectionParticipations = {
       labelTag: 'Best AT&T Category Award',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_silver',
-      imgSource: '/web/images/events/lvpei.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/lvpei.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-35%', top: '9%', fontSize: '1.3rem' },
     },
@@ -137,7 +163,9 @@ export const sectionParticipations = {
       labelTag: 'Top 10 Qualifier',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_silver',
-      imgSource: '/web/images/events/selectMakeathon.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/selectMakeathon.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Reverse Engineering',
       style: { left: '-35%', top: '-2%', fontSize: '1.4rem' },
     },
@@ -148,7 +176,9 @@ export const sectionParticipations = {
       labelTag: 'Honorable Mention: LivePeer API',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_brown',
-      imgSource: '/web/images/projects/waterchain.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/projects/waterchain.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-35%', top: '7%', fontSize: '1rem' },
     },
@@ -158,7 +188,9 @@ export const sectionParticipations = {
       labelTag: '19th Global Rank',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_brown',
-      imgSource: '/web/images/events/rx2018.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/rx2018.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-35%', top: '-3%', fontSize: '1.2rem' },
     },
@@ -168,7 +200,9 @@ export const sectionParticipations = {
       labelTag: 'Event Co-ordinator',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_brown',
-      imgSource: '/web/images/events/irc2018.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/irc2018.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Reverse Engineering',
       style: { left: '-30%', top: '7%', fontSize: '1.3rem' },
     },
@@ -178,7 +212,9 @@ export const sectionParticipations = {
       labelTag: '3 Times Silver/Bronze Medalist',
       labelTagNeeded: true,
       badgeClass: 'HonorLabel_brown',
-      imgSource: '/web/images/events/sof.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/sof.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
       style: { left: '-35%', top: '7%', fontSize: '1rem' },
     },
@@ -188,7 +224,9 @@ export const sectionParticipations = {
       eventName: 'Design to Print',
       labelTagNeeded: false,
       labelTag: 'Participant',
-      imgSource: '/web/images/events/designtoprint.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/designtoprint.jpg',
+      isWebImage: true,
       imgAlt: 'ASME Reverse Engineering',
     },
     {
@@ -196,7 +234,9 @@ export const sectionParticipations = {
       eventName: 'Dover Hackathon',
       labelTagNeeded: false,
       labelTag: 'Participant',
-      imgSource: '/web/images/events/doverHack.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/doverHack.jpg',
+      isWebImage: true,
       imgAlt: 'Dover Hackathon',
     },
     {
@@ -204,7 +244,9 @@ export const sectionParticipations = {
       eventName: 'ASME eFest',
       labelTagNeeded: false,
       labelTag: 'Participant',
-      imgSource: '/web/images/events/efest_asme.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/efest_asme.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -212,7 +254,9 @@ export const sectionParticipations = {
       eventName: 'SBU Hacks',
       labelTagNeeded: false,
       labelTag: 'Participant',
-      imgSource: '/web/images/events/sbuhacks.jpg',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/sbuhacks.jpg',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
     {
@@ -220,7 +264,9 @@ export const sectionParticipations = {
       eventName: 'Raccoons Virtual Hackathon',
       labelTagNeeded: false,
       labelTag: 'Participant',
-      imgSource: '/web/images/events/raccoons.png',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/raccoons.png',
+      isWebImage: true,
       imgAlt: 'ASME eFest Asia Pacific 2017',
     },
   ],

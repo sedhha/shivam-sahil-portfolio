@@ -43,7 +43,11 @@ export function MappingParticipants(props) {
               <div className={classes.ImageItem}>
                 <img
                   className={classes.ImageItem_img}
-                  src={process.env.PUBLIC_URL + ele.imgSource}
+                  src={
+                    ele.isWebImage
+                      ? `${ele.imgSource}?raw=true`
+                      : process.env.PUBLIC_URL + ele.imgSource
+                  }
                   alt={ele.imgAlt}
                 />
               </div>
