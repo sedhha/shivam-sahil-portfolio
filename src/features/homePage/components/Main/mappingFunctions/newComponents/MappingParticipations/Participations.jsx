@@ -9,6 +9,11 @@ export function MappingParticipants(props) {
     sectionsParticipations.headingStyle,
     classes
   );
+  const { bgImageUrl, bgWebImage } = sectionsParticipations.background;
+  const injectorUri = bgWebImage
+    ? `${bgImageUrl}?raw=true`
+    : `${process.env.PUBLIC_URL}/${bgImageUrl}`;
+  console.log(injectorUri);
   return sectionsParticipations.showSection ? (
     <section
       className={classes.SectionDefinition}
@@ -21,8 +26,7 @@ export function MappingParticipants(props) {
           classes.StyledScrollBarClass,
         ].join(' ')}
         style={{
-          backgroundImage:
-            'linear-gradient(to right bottom, rgba(130, 231, 242, 0.8), rgba(100, 166, 255, 0.8)), url(/web/images/composition/cover-1.jpg)',
+          backgroundImage: `linear-gradient(to right bottom, rgba(130, 231, 242, 0.8), rgba(100, 166, 255, 0.8)), url('${injectorUri}')`,
         }}>
         {sectionsParticipations.elements.map((ele) => {
           return (

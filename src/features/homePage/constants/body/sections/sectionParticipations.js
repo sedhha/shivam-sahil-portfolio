@@ -6,6 +6,11 @@ export const sectionParticipations = {
   showSection: true,
   heading: 'Events And Participations',
   headingStyle: {},
+  background: {
+    bgImageUrl:
+      'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/composition/cover-1.jpg',
+    bgWebImage: true,
+  },
   elements: [
     {
       id: nanoid(),
