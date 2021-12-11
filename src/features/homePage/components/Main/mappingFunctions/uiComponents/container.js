@@ -36,7 +36,7 @@ export default class SlidingContainer extends Component {
     });
   };
   render() {
-    const { imageGrade1, imageGrade2, backgroundUrl } =
+    const { imageGrade1, imageGrade2, backgroundUrl, isWebUrl } =
       this.props.backgroundSpecs;
     const sections = this.props.renderArrayOfComponents;
     const renderElement = sections.map((ele, index) => {
@@ -83,6 +83,10 @@ export default class SlidingContainer extends Component {
 
       return renderer;
     });
+
+    const urlImage = isWebUrl
+      ? `${backgroundUrl}?raw=true`
+      : `${process.env.PUBLIC_URL}/${backgroundUrl}`;
     return (
       <div
         style={{
@@ -90,7 +94,7 @@ export default class SlidingContainer extends Component {
 			to right bottom,
 			${imageGrade1 || 'rgba(126,213,111,.8)'},
 			${imageGrade2 || 'rgba(40,180,133,.8)'}),
-			url('${process.env.PUBLIC_URL}/${backgroundUrl}')`,
+			url('${urlImage}')`,
         }}
         className={classes.SlidingContainer}>
         {renderElement}

@@ -12,7 +12,9 @@ export const sectionReferences = {
   backgroundSpecs: {
     imageGrade1: 'rgba(130,231,242,.8)',
     imageGrade2: 'rgba(100,166,255,.8)',
-    backgroundUrl: 'web/images/hero.png',
+    backgroundUrl:
+      'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/hero.png',
+    isWebUrl: true,
   },
   userTestimonials: [
     {
