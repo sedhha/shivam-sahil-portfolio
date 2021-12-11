@@ -26,16 +26,17 @@ const getUserTestimonials = (
             className={classes.story_image}
             src={
               element.isWebImage
-                ? element.displayUri
+                ? `${element.displayUri}?raw=true`
                 : `${process.env.PUBLIC_URL}/${element.displayUri}`
             }
             alt={'reference'}
           />
         </div>
+        <p className={classes.ElementHeading}>{element.heading}</p>
         <p
-          style={element.headingStyle || {}}
-          className={classes.ElementHeading}>
-          {element.heading}
+          className={classes.ElementTitleParaHeading}
+          style={element.headingStyle || {}}>
+          {element.positionAtTimeOfReferal}
         </p>
         {pbreaks}
         {socialMediaIcons}

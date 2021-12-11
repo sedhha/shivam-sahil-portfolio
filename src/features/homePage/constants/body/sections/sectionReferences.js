@@ -16,10 +16,33 @@ export const sectionReferences = {
   },
   userTestimonials: [
     {
-      displayUri: 'web/images/referrals/bhushan.jpg',
-      isWebImage: false,
+      displayUri:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/referrals/ankur.jpg',
+      isWebImage: true,
+      name: 'Ankur Verma',
+      heading: 'Passionate Developer',
+      positionAtTimeOfReferal: 'Senior Decision Scientist at Yoptima',
+      headingStyle: { marginBottom: '1.5rem' },
+      socialHandles: [
+        {
+          href: 'https://www.linkedin.com/in/vankur/',
+          id: 'userTestimonials__socialHandle__ankur__' + nanoid(),
+          icon: getIcon(iconsMap.linkedin, {
+            ...socialHandleSize,
+            color: 'blue',
+          }),
+        },
+      ],
+      content: `Shivam is an inquisitive and passionate developer who was an integral part of the product development team and kind of a backbone for adopting newer technologies in a short period.
+      During his tenure, he worked on several groundbreaking technologies that eased the day to day activities and has laid solid foundations for Software Development lifecycle and Workflow Automation.`,
+    },
+    {
+      displayUri:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/referrals/bhushan.jpg',
+      isWebImage: true,
       name: 'Bhushan Kshire',
       heading: 'Great Decision Maker',
+      positionAtTimeOfReferal: 'Product Manager at Yoptima',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
@@ -35,10 +58,12 @@ export const sectionReferences = {
 			No doubt he would be a valuable asset for any organization.`,
     },
     {
-      displayUri: 'web/images/referrals/mridula.jpg',
-      isWebImage: false,
+      displayUri:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/referrals/mridula.jpg',
+      isWebImage: true,
       name: 'Mridula',
       heading: 'Hardworking and extremely skilled',
+      positionAtTimeOfReferal: 'Operations Executive at Eckovation',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
@@ -54,10 +79,12 @@ export const sectionReferences = {
                 He is hardworking and sincere towards his work. He was also responsible for the evaluation of assignments and providing proper feedback and guidance to the students during the course curriculum. On a personal level, I found Shivam knowledgeable, focused and inquisitive towards his work.`,
     },
     {
-      displayUri: 'web/images/referrals/johnRajan.jpg',
-      isWebImage: false,
+      displayUri:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/referrals/johnRajan.jpg',
+      isWebImage: true,
       name: 'John Rajan',
       heading: 'Multi talented and Active',
+      positionAtTimeOfReferal: 'Professor (Manufacturing Engineering) at VIT',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {

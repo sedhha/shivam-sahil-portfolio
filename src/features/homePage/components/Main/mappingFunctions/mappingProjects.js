@@ -53,12 +53,19 @@ const breakStringParas = (stringPara, classes) => {
 
 const mapProjects = (projectComponents, classes, onClickCallback) => {
   const projects = projectComponents.components.map((ele) => {
-    const gradientString = `linear-gradient(to ${ele.front.gradientDirection},
+    const gradientString = ele.front.isWebImage
+      ? `linear-gradient(to ${ele.front.gradientDirection},
+        ${ele.back.gradientColor1 || 'rgba(126,213,111,.8)'},
+        ${ele.back.gradientColor2 || 'rgba(40,180,133,.8)'}),
+        url('${ele.front.imgSource}?raw=true')`
+      : `linear-gradient(to ${ele.front.gradientDirection},
 				${ele.back.gradientColor1 || 'rgba(126,213,111,.8)'},
 				${ele.back.gradientColor2 || 'rgba(40,180,133,.8)'}),
 				url('${process.env.PUBLIC_URL}/${ele.front.imgSource}')`;
 
-    const imgGradient = `url('${process.env.PUBLIC_URL}/${ele.front.imgSource}')`;
+    const imgGradient = ele.front.isWebImage
+      ? `url('${ele.front.imgSource}?raw=true')`
+      : `url('${process.env.PUBLIC_URL}/${ele.front.imgSource}')`;
     const frontGradient = `linear-gradient(to ${ele.front.gradientDirection}, ${ele.front.gradientColor1},${ele.front.gradientColor2})`;
     const backgroundGradient = `linear-gradient(to ${ele.back.gradientDirection}, ${ele.back.gradientColor1},${ele.back.gradientColor2})`;
 
