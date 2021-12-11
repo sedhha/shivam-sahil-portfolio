@@ -8,7 +8,7 @@ export const sectionParticipations = {
   headingStyle: {},
   background: {
     bgImageUrl:
-      'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/composition/cover-1.jpg',
+      'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/hero2.jpg',
     bgWebImage: true,
   },
   elements: [
