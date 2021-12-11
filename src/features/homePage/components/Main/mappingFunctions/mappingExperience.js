@@ -17,7 +17,11 @@ const getExperienceContent = (
         <div className={classes['section-gridbox__gridElement']}>
           <img
             className={classes['section-gridbox__gridElement--img']}
-            src={element.image.src}
+            src={
+              element.image.isWebImage
+                ? `${element.image.src}?raw=true`
+                : element.image.src
+            }
             alt={element.image.alt || 'img'}
           />
           <div>

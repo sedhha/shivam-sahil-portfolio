@@ -11,9 +11,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/optum.jpg',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/optum.jpg',
           additionalStyling: {},
           alt: 'optum',
+          isWebImage: true,
         },
         companyName: 'Optum (UHG)',
         dates: 'Oct 2021 - Present',
@@ -23,9 +24,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/yoptima.jpg',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/yoptima.jpg',
           additionalStyling: {},
           alt: 'yoptima',
+          isWebImage: true,
         },
         companyName: 'Yoptima',
         dates: 'Jan 2020 - Oct 2021',
@@ -36,9 +38,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/eckovation.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/eckovation.png',
           additionalStyling: {},
           alt: 'eckovation',
+          isWebImage: true,
         },
         companyName: 'Eckovation',
         dates: 'Jul 2019 - Jul 2020',
@@ -49,9 +52,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/transtutors.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/transtutors.png',
           additionalStyling: {},
           alt: 'transtutors',
+          isWebImage: true,
         },
         companyName: 'Transtutors',
         dates: 'March 2020 - Present',
@@ -62,9 +66,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/airindia.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/airindia.png',
           additionalStyling: {},
           alt: 'airindia',
+          isWebImage: true,
         },
         companyName: 'AirIndia',
         dates: 'May 2019 - June 2019',
@@ -75,9 +80,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/drdo.jpg',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/drdo.jpg',
           additionalStyling: {},
           alt: 'drdo',
+          isWebImage: true,
         },
         companyName: 'DRDO',
         dates: 'June 2019 - Aug 2019',
@@ -88,9 +94,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/roverx.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/roverx.png',
           additionalStyling: {},
           alt: 'rover',
+          isWebImage: true,
         },
         companyName: 'Rover-X',
         dates: 'September 2016 - July 2019',
@@ -101,9 +108,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/vibexus.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/vibexus.png',
           additionalStyling: {},
           alt: 'vibexus',
+          isWebImage: true,
         },
         companyName: 'Vibexus',
         dates: 'June 2020 - Aug 2020',
@@ -114,9 +122,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/chegg.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/chegg.png',
           additionalStyling: {},
           alt: 'chegg',
+          isWebImage: true,
         },
         companyName: 'Chegg',
         dates: 'Oct 2019 - July 2020',
@@ -127,9 +136,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/crunchytricks.jpg',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/crunchytricks.jpg',
           additionalStyling: {},
           alt: 'crunchytricks',
+          isWebImage: true,
         },
         companyName: 'Crunchy Tricks',
         dates: 'July 2019 - Aug 2019',
@@ -140,9 +150,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/vitradio.jpg',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/vitradio.jpg',
           additionalStyling: {},
           alt: 'vit_radio',
+          isWebImage: true,
         },
         companyName: 'Vit Radio',
         dates: 'June 2018 - June 2019',
@@ -153,9 +164,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/wrytin.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/wrytin.png',
           additionalStyling: {},
           alt: 'wrytin',
+          isWebImage: true,
         },
         companyName: 'Wrytin',
         dates: 'May 2019 - June 2019',
@@ -166,9 +178,10 @@ export const sectionExperiences = {
       {
         id: nanoid(),
         image: {
-          src: 'web/images/experiences/delhispeaking.png',
+          src: 'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/experiences/delhispeaking.png',
           additionalStyling: {},
           alt: 'delhispeaking',
+          isWebImage: true,
         },
         companyName: 'Delhi Speaking',
         dates: 'May 2019 - September 2019',
