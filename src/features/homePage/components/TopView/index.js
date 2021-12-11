@@ -10,6 +10,9 @@ import { pushDataToBackend } from '../../slice/socketSlice';
 export default function TopHeader() {
   const topHeader = useSelector(getTopHeaders);
   const dispatch = useDispatch();
+  const imgUri = topHeader.isHeaderImageWebUrl
+    ? `url('${topHeader.headImageUrl}?raw=true')`
+    : `url('${process.env.PUBLIC_URL}/${topHeader.headImageUrl}')`;
   return (
     <header
       id={sectionIds.topHeader_sectionId}
@@ -19,13 +22,17 @@ export default function TopHeader() {
 			to right bottom,
 			${topHeader.headerGrade1 || 'rgba(126,213,111,.8)'},
 			${topHeader.headerGrade2 || 'rgba(40,180,133,.8)'}),
-			url('${process.env.PUBLIC_URL}/${topHeader.headImageUrl}')`,
+			${imgUri}`,
       }}>
       <div className={classes.logobox}>
         {topHeader.isLogoRequired ? (
           <img
             className={classes.logo}
-            src={process.env.PUBLIC_URL + topHeader.logoImageUrl}
+            src={
+              topHeader.isLogoWebImage
+                ? `${topHeader.logoImageUrl}?raw=true`
+                : process.env.PUBLIC_URL + topHeader.logoImageUrl
+            }
             alt={topHeader.logoAltDescription || 'logo'}
           />
         ) : null}
