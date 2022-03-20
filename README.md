@@ -247,3 +247,5 @@ And last but not least, I would like to have a special mention to [Jonas Schmedt
 I always felt that there's a special thing that is missing in my webdev experience, when you go through so many different concepts and when you try to make a great website this miss always bugged me, I was not sure what it was unless I realized how much I struggled with css.
 
 CSS itself has so much in it and to fill out that void, I enrolled in this amazing course and I am so glad that I did. In all of the web dev courses, you learn a lot of concepts, but CSS is something which I found to be missing. And it's for valid reasons, those courses aren't centered towards CSS yet they teach you a lot about responsive design. Since this course was specifically focussed towards CSS, I was able to deep dive into it and learn a lot of advanced CSS concepts and used them right away in my spideyPortfolio project.
+
+Disable Webpage: `firebase hosting:disable --project shivam-sahil`

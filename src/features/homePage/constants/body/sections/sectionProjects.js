@@ -13,6 +13,63 @@ export const sectionProjects = {
     components: [
       {
         id: 'projectComponents_components__' + nanoid(),
+        display: 'IntelliPick',
+        back: {
+          display: 'About',
+          gradientColor1: colors.color_tertiary_light,
+          gradientColor2: colors.color_tertiary_dark,
+          gradientDirection: 'right bottom',
+          projectDescription: `IntelliPick is the goto tool for all tech hiring industries that helps hiring managers go through the resume in bulk and pull out useful insights like github social scores, open source contributions, framwork familarity score, dev community score, etc.
+          In addition to this, one can customize the profiles and scores and choose to prioritise or ignore any specific dev profile like Stack Overflow or Github.`, //Using New Line to break paragraphs
+          buttonList: [
+            {
+              id: 'projectComponents_components_buttonList' + nanoid(),
+              href: 'https://github.com/sedhha/intellipick-codebase',
+              buttonText: 'Source Code',
+            },
+
+            {
+              id: 'projectComponents_components_buttonList' + nanoid(),
+              href: 'https://www.youtube.com/watch?v=jH7y8doN_QQ',
+              buttonText: 'View',
+            },
+          ],
+        },
+        front: {
+          isWebImage: true,
+          imgSource:
+            'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/projects/intellipick.gif',
+          display: 'front',
+          gradientColor1: colors.color_white,
+          gradientColor2: colors.color_white,
+          disableGradientForPhoto: true,
+          gradientDirection: 'right bottom',
+          featureList: [
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display: 'Product Finalist in UIPath RPA Hackathon',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display: 'Fast API as middleware server',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display: 'UIPath Orchestrator API to trigger RPA Processes',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display:
+                'Weight Paramters to Customize and Configure search results',
+            },
+          ],
+        },
+      },
+      {
+        id: 'projectComponents_components__' + nanoid(),
         display: 'My Water Chain',
         back: {
           display: 'About',

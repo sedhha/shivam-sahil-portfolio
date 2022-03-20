@@ -32,12 +32,12 @@ const getUserTestimonials = (
             alt={'reference'}
           />
         </div>
-        <p className={classes.ElementHeading}>{element.heading}</p>
         <p
           className={classes.ElementTitleParaHeading}
           style={element.headingStyle || {}}>
           {element.positionAtTimeOfReferal}
         </p>
+        <p className={classes.ElementHeading}>{element.heading}</p>
         {pbreaks}
         {socialMediaIcons}
       </div>

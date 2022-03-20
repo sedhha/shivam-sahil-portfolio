@@ -12,6 +12,18 @@ export const sectionVideos = {
       {
         id: nanoid(),
         customThumbnail: false,
+        video_id: 'bZcfJHSKZcc',
+        heading: 'Using Middlewares in NEXT js',
+      },
+      {
+        id: nanoid(),
+        customThumbnail: false,
+        video_id: 'jH7y8doN_QQ',
+        heading: 'IntelliPick: Screen multiple resumes efficiently!',
+      },
+      {
+        id: nanoid(),
+        customThumbnail: false,
         video_id: 'vRO0CXJC4Xw',
         heading: 'Understanding the Merge Sort Algorithm',
       },

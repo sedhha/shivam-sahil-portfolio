@@ -23,7 +23,7 @@ export const sectionReferences = {
       isWebImage: true,
       name: 'Ankur Verma',
       heading: 'Passionate Developer',
-      positionAtTimeOfReferal: 'Senior Decision Scientist at Yoptima',
+      positionAtTimeOfReferal: 'Ankur, Senior Decision Scientist at Yoptima',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
@@ -44,7 +44,7 @@ export const sectionReferences = {
       isWebImage: true,
       name: 'Bhushan Kshire',
       heading: 'Great Decision Maker',
-      positionAtTimeOfReferal: 'Product Manager at Yoptima',
+      positionAtTimeOfReferal: 'Bhushan, Product Manager at Yoptima',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
@@ -65,7 +65,7 @@ export const sectionReferences = {
       isWebImage: true,
       name: 'Mridula',
       heading: 'Hardworking and extremely skilled',
-      positionAtTimeOfReferal: 'Operations Executive at Eckovation',
+      positionAtTimeOfReferal: 'Mridula, Operations Executive at Eckovation',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
@@ -86,7 +86,8 @@ export const sectionReferences = {
       isWebImage: true,
       name: 'John Rajan',
       heading: 'Multi talented and Active',
-      positionAtTimeOfReferal: 'Professor (Manufacturing Engineering) at VIT',
+      positionAtTimeOfReferal:
+        'John Rajan, Professor (Manufacturing Engineering) at VIT',
       headingStyle: { marginBottom: '1.5rem' },
       socialHandles: [
         {
