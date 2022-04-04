@@ -14,6 +14,30 @@ export const sectionParticipations = {
   elements: [
     {
       id: nanoid(),
+      eventName: 'MegaHack 2022',
+      labelTag: 'Global NGO Prize',
+      labelTagNeeded: true,
+      badgeClass: 'HonorLabel_gold',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/app-overview.gif',
+      isWebImage: true,
+      imgAlt: 'MegaHack 2022, Global NGO Price',
+      style: { left: '-35%', top: '2%' },
+    },
+    {
+      id: nanoid(),
+      eventName: 'UIPath Innovation RPA Hack 2021',
+      labelTag: 'Bright Idea Finalist',
+      labelTagNeeded: true,
+      badgeClass: 'HonorLabel_silver',
+      imgSource:
+        'https://github.com/sedhha/gitpractice/blob/master/webpf/web/images/events/intellipick.jpg',
+      isWebImage: true,
+      imgAlt: 'UiPath RPA 2021 Bright Idea Finalist',
+      style: { left: '-35%', top: '2%' },
+    },
+    {
+      id: nanoid(),
       eventName: 'UW BlockChain Hack',
       labelTag: '2 Time Winner',
       labelTagNeeded: true,

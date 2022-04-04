@@ -12,8 +12,8 @@ export const sectionVideos = {
       {
         id: nanoid(),
         customThumbnail: false,
-        video_id: 'bZcfJHSKZcc',
-        heading: 'Using Middlewares in NEXT js',
+        video_id: 'Y9LsULqXvNk',
+        heading: 'Async Unmounted Component State Update Handling',
       },
       {
         id: nanoid(),
