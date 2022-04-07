@@ -12,6 +12,12 @@ export const sectionVideos = {
       {
         id: nanoid(),
         customThumbnail: false,
+        video_id: 'by9vgcW2tms',
+        heading: 'CI-CD Pipeline: Github Actions in NEXT JS',
+      },
+      {
+        id: nanoid(),
+        customThumbnail: false,
         video_id: 'Y9LsULqXvNk',
         heading: 'Async Unmounted Component State Update Handling',
       },
