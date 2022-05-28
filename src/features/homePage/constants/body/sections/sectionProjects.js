@@ -13,11 +13,74 @@ export const sectionProjects = {
     components: [
       {
         id: 'projectComponents_components__' + nanoid(),
-        display: 'IntelliPick',
+        display: 'FunFuse',
         back: {
           display: 'About',
           gradientColor1: colors.color_tertiary_light,
           gradientColor2: colors.color_tertiary_dark,
+          gradientDirection: 'right bottom',
+          projectDescription: `Unlike most professional platforms, FunFuse takes a completely different approach to its users.It enables the users to filter out and discover the talent and community where they can dissolve well and grow collaboratively.
+          It gives flexibility to every individual to decide what kind of people they're looking for to grow and scale up their businesses.`, //Using New Line to break paragraphs
+          buttonList: [
+            {
+              id: 'projectComponents_components_buttonList' + nanoid(),
+              href: 'https://github.com/sedhha/gzb-products/tree/main/components/funfuse',
+              buttonText: 'Source Code',
+            },
+
+            {
+              id: 'projectComponents_components_buttonList' + nanoid(),
+              href: 'https://www.youtube.com/watch?v=HAVetZqW-eI&t=1s',
+              buttonText: 'View',
+            },
+            {
+              id: 'projectComponents_components_buttonList' + nanoid(),
+              href: 'https://gzb-products-sedhha.vercel.app/funfuse',
+              buttonText: 'Open App',
+            },
+          ],
+        },
+        front: {
+          isWebImage: true,
+          imgSource:
+            'https://raw.githubusercontent.com/sedhha/gitpractice/master/webpf/web/images/projects/funfuse.JPG',
+          display: 'front',
+          gradientColor1: colors.color_white,
+          gradientColor2: colors.color_white,
+          disableGradientForPhoto: true,
+          gradientDirection: 'right bottom',
+          featureList: [
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display:
+                'Winner for Challenge 3: Community Mentoring App, Principal Hack 2022',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display: 'Social Media and Real time messaging features',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display: 'Real time video conferencing through Dyte API',
+            },
+
+            {
+              id: 'projectComponents_components__' + nanoid(),
+              display:
+                'In App User Discoverability based on Skills and Interests',
+            },
+          ],
+        },
+      },
+      {
+        id: 'projectComponents_components__' + nanoid(),
+        display: 'IntelliPick',
+        back: {
+          display: 'About',
+          gradientColor1: colors.color_primary_light,
+          gradientColor2: colors.color_primary_dark,
           gradientDirection: 'right bottom',
           projectDescription: `IntelliPick is the goto tool for all tech hiring industries that helps hiring managers go through the resume in bulk and pull out useful insights like github social scores, open source contributions, framwork familarity score, dev community score, etc.
           In addition to this, one can customize the profiles and scores and choose to prioritise or ignore any specific dev profile like Stack Overflow or Github.`, //Using New Line to break paragraphs

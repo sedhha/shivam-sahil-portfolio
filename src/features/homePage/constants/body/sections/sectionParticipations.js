@@ -14,6 +14,18 @@ export const sectionParticipations = {
   elements: [
     {
       id: nanoid(),
+      eventName: 'Principal Hack 2022',
+      labelTag: 'Community Mentoring App Award',
+      labelTagNeeded: true,
+      badgeClass: 'HonorLabel_gold',
+      imgSource:
+        'https://raw.githubusercontent.com/sedhha/gitpractice/master/webpf/web/images/events/principalHack.jpg',
+      isWebImage: true,
+      imgAlt: 'Principal Hack 2022',
+      style: { left: '-35%', top: '2%' },
+    },
+    {
+      id: nanoid(),
       eventName: 'MegaHack 2022',
       labelTag: 'Global NGO Prize',
       labelTagNeeded: true,
