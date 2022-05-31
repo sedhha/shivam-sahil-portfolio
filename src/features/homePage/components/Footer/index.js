@@ -54,7 +54,18 @@ const Footer = () => {
       </p>
       <hr className={classes.RulerLine} />
       <p className={classes.CopyRightContent}>
-        &copy; {copyrightDetails.name + ' ' + new Date().getFullYear()}
+        &copy; {copyrightDetails.name + ' ' + new Date().getFullYear() + '    '}
+        | A big thanks to all the{' '}
+        <span>
+          <a
+            className={classes.MentorsTag}
+            href='https://github.com/sedhha/shivam-sahil-portfolio#credits-section'
+            target='_blank'
+            rel='noreferrer'>
+            mentors
+          </a>
+        </span>{' '}
+        who helped me build this!
       </p>
     </footer>
   );
