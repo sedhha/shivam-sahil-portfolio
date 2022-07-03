@@ -13,8 +13,7 @@ export const sectionVideos = {
         id: nanoid(),
         customThumbnail: false,
         video_id: 'F5_6-21GaxM',
-        heading:
-          'QuickBooks oAuth: Refresh and Regenerate Access and Refresh Tokens for making API calls',
+        heading: 'QuickBooks oAuth: Refresh and Regenerate Tokens',
       },
       {
         id: nanoid(),
