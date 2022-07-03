@@ -12,6 +12,13 @@ export const sectionVideos = {
       {
         id: nanoid(),
         customThumbnail: false,
+        video_id: 'F5_6-21GaxM',
+        heading:
+          'QuickBooks oAuth: Refresh and Regenerate Access and Refresh Tokens for making API calls',
+      },
+      {
+        id: nanoid(),
+        customThumbnail: false,
         video_id: 'by9vgcW2tms',
         heading: 'CI-CD Pipeline: Github Actions in NEXT JS',
       },

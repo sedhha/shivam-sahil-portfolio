@@ -14,6 +14,30 @@ export const sectionParticipations = {
   elements: [
     {
       id: nanoid(),
+      eventName: 'HackForGood: Grab Hackathon 2022',
+      labelTag: 'Second Runner Up',
+      labelTagNeeded: true,
+      badgeClass: 'HonorLabel_gold',
+      imgSource:
+        'https://raw.githubusercontent.com/sedhha/gitpractice/master/webpf/web/images/events/second-runner-up-grab.jpg',
+      isWebImage: true,
+      imgAlt: 'HackForGood: Grab Hackathon 2022 - Second Runner Up',
+      style: { left: '-35%', top: '2%' },
+    },
+    {
+      id: nanoid(),
+      eventName: 'HackForGood: Grab Hackathon 2022',
+      labelTag: 'Most Unique Submission',
+      labelTagNeeded: true,
+      badgeClass: 'HonorLabel_gold',
+      imgSource:
+        'https://raw.githubusercontent.com/sedhha/gitpractice/master/webpf/web/images/events/most-unique-solution-grab.jpg',
+      isWebImage: true,
+      imgAlt: 'HackForGood: Grab Hackathon 2022 - Most Unique Submission',
+      style: { left: '-35%', top: '2%' },
+    },
+    {
+      id: nanoid(),
       eventName: 'Principal Hack 2022',
       labelTag: 'Community Mentoring App Award',
       labelTagNeeded: true,
